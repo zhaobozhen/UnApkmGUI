@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:scheme="content" />
-                <data android:mimeType="application/apkm" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.apkm" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity">

@@ -8,11 +8,10 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import java.io.File
 import java.io.InputStream
 
-class ConvertActivity : AppCompatActivity() {
+class ConvertActivity : Activity() {
 
     private var inputStream: InputStream? = null
     private lateinit var converting: TextView
@@ -34,7 +33,7 @@ class ConvertActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
+        if (requestCode == 1 && resultCode == RESULT_OK) {
             data?.data?.let {
                 converting.text = getString(R.string.converting)
 
@@ -50,6 +49,8 @@ class ConvertActivity : AppCompatActivity() {
                     finish()
                 }.start()
             }
+        } else {
+            finish()
         }
         super.onActivityResult(requestCode, resultCode, data)
     }
