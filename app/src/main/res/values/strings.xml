@@ -4,7 +4,7 @@
     <!--  Home  -->
     <string name="home_usage">Usage</string>
     <string name="home_detail">1. Open a .apkm file with UnApkmGUI in a File Manager.\n2. Select a path to save new file.\n3. Enjoy.</string>
-    <string name="home_thanks">Thanks: https://github.com/souramoo/unapkm</string>
+    <string name="home_thanks">Thanks: https://github.com/souramoo/unapkm\nSource code: https://github.com/zhaobozhen/UnApkmGUI</string>
     <string name="converting">Converting…</string>
 
     <string name="toast_no_document_app">No Document app</string>
